@@ -8,7 +8,6 @@ public class PraktijkOpdracht extends Applet {
     String tekst;
 
     double cijfer1, cijfer2, cijfer3, gedeeld, uitkomst, tien;
-    int tienint;
 
 
     public void init() {
@@ -20,8 +19,10 @@ public class PraktijkOpdracht extends Applet {
         cijfer3 = 6.9;
         gedeeld = 3;
         tien = 10;
-        tienint = 10;
         uitkomst = (cijfer1 + cijfer2 + cijfer3) / gedeeld;
+        uitkomst *= 10;
+        uitkomst = (int) uitkomst;
+        uitkomst = uitkomst / 10;
 
             }
 
@@ -30,4 +31,6 @@ public class PraktijkOpdracht extends Applet {
         g.drawString(tekst + uitkomst,50,50);
 
             }
+
+
 }
