@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Opdracht1 extends Applet {
+public class Opdracht2 extends Applet {
 
     TextField tekstvak;
     Button ok;
@@ -13,7 +13,6 @@ public class Opdracht1 extends Applet {
     int getal;
     int getal2;
     int getal3;
-    int getal4;
 
     public void init() {
 
@@ -26,16 +25,16 @@ public class Opdracht1 extends Applet {
         add(ok);
 
         getal2 = 0;
+
         getal3 = 0;
-        getal4 = 0;
 
 
             }
 
     public void paint(Graphics g) {
 
-        g.drawString("Hoogste Getal:" + getal4,50,70);
-        g.drawString("Laagste Getal:"+ getal3, 50,90);
+        g.drawString("" + getal2,50,70);
+        g.drawString("" + getal3,50,90);
 
             }
 
@@ -45,19 +44,13 @@ public class Opdracht1 extends Applet {
                     String s = tekstvak.getText();
                     getal = Integer.parseInt(s);
                     if (getal > getal2) {
-                        getGraphics().drawString(""+ getal,50,70);
                         getal2 = getal;
-                        getal4 = getal2;
-                                         }
-                    // Applet werkt, alleen blijft het laagste getal hoger worden
-                    // waneer je een cijfer invoerd tussen het hoogste en het laagste
-                    // getal.
-                    if (getal < getal4) {
-                        getGraphics().drawString(""+ getal, 50, 90);
+                        repaint();
+                    }
+                    if (getal < getal2) {
                         getal3 = getal;
-                                        }
-
-                    repaint();
+                        repaint();
+                    }
 
                 }
             }
