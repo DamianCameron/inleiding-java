@@ -71,28 +71,28 @@ public class Opdracht4 extends Applet {
                     tekst = "April " + jaar + " heeft 30 dagen en " + tekst2;
                     break;
                 case 5:
-                    tekst = "Mei " + jaar + " heeft 31 dagen.";
+                    tekst = "Mei " + jaar + " heeft 31 dagen " + tekst2;
                     break;
                 case 6:
-                    tekst = "Juni " + jaar + " heeft 30 dagen.";
+                    tekst = "Juni " + jaar + " heeft 30 dagen " + tekst2;
                     break;
                 case 7:
-                    tekst = "Juli " + jaar + " heeft 31 dagen";
+                    tekst = "Juli " + jaar + " heeft 31 dagen " + tekst2;
                     break;
                 case 8:
-                    tekst = "Augustus " + jaar + " heeft 31 dagen.";
+                    tekst = "Augustus " + jaar + " heeft 31 dagen " + tekst2;
                     break;
                 case 9:
-                    tekst = "September " + jaar + " heeft 30 dagen.";
+                    tekst = "September " + jaar + " heeft 30 dagen " + tekst2;
                     break;
                 case 10:
-                    tekst = "Oktober " + jaar + " heeft 31 dagen.";
+                    tekst = "Oktober " + jaar + " heeft 31 dagen " + tekst2;
                     break;
                 case 11:
-                    tekst = "November " + jaar + " heeft 30 dagen.";
+                    tekst = "November " + jaar + " heeft 30 dagen " + tekst2;
                     break;
                 case 12:
-                    tekst = "December " + jaar + " heeft 31 dagen.";
+                    tekst = "December " + jaar + " heeft 31 dagen " + tekst2;
                     break;
                 default:
                     tekst = "oops, die maand bestaat niet..!";
