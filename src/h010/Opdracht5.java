@@ -31,13 +31,17 @@ public class Opdracht5 extends Applet {
 
 
     public void paint(Graphics g) {
-        g.drawString(tekst + (buffer + inputcijfer),70,70);
+        g.drawString(tekst + inputcijfer,50,70);
     }
 
     class buttonlistener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             s = tekstvak.getText();
             inputcijfer = Integer.parseInt(s);
+
+            inputcijfer = inputcijfer + inputcijfer;
+
+            repaint();
         }
     }
 }
