@@ -12,7 +12,7 @@ public class Opdracht2 extends Applet {
         int y = 0;
 
         while(teller < 21) {
-            y += 20;
+            y += 10;
             g.drawString("" + teller, 305, y );
             teller++;
         }
